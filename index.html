@@ -3,198 +3,239 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modern & Clean Website Template</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <title>Global Nautical Charts &mdash; Navigate Your World</title>
+    <meta name="description" content="Explore and download high-resolution nautical charts for safe and informed maritime navigation. Covering oceans, seas, and coastal waters worldwide.">
+    <meta name="keywords" content="nautical charts, marine charts, navigation, hydrography, seafaring, boating, maritime, electronic charts, paper charts, voyage planning">
+
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
+
+    <header class="main-header">
         <div class="container">
             <div class="logo">
-                <a href="#home">YourLogo</a>
+                <a href="#home">
+                    <i class="fas fa-compass"></i> <span>ChartPoint</span>
+                </a>
             </div>
-            <nav class="main-nav">
-                <ul class="nav-links">
+            <nav class="main-nav" id="mainNav">
+                <ul class="nav-list">
                     <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#charts">Charts</a></li>
+                    <li><a href="#about">About Us</a></li>
                     <li><a href="#contact">Contact</a></li>
+                    <li><a href="#" class="btn btn-login">Login</a></li>
                 </ul>
-                <div class="burger-menu" id="burger-menu">
+                <div class="nav-toggle" id="navToggle">
                     <i class="fas fa-bars"></i>
                 </div>
             </nav>
         </div>
     </header>
 
-    <section id="home" class="hero-section">
+    <section id="home" class="hero-section section-padded">
         <div class="container">
             <div class="hero-content">
-                <h1>Welcome to Our Modern Platform</h1>
-                <p>We craft beautiful and functional digital experiences that resonate with your audience.</p>
-                <a href="#contact" class="btn btn-primary">Get Started Today</a>
+                <h1>Navigate with Unrivaled Precision</h1>
+                <p>The most accurate and up-to-date nautical charts for professional mariners and enthusiasts alike.</p>
+                <div class="hero-buttons">
+                    <a href="#charts" class="btn btn-primary">Browse Charts</a>
+                    <a href="#about" class="btn btn-secondary">Our Mission</a>
+                </div>
             </div>
         </div>
     </section>
 
-    <section id="about" class="about-section">
+    <section class="quick-features section-padded">
         <div class="container">
-            <h2>About Us</h2>
-            <div class="about-grid">
+            <h2>Why Choose ChartPoint?</h2>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <i class="fas fa-sync-alt"></i>
+                    <h3>Always Up-to-Date</h3>
+                    <p>Access the latest hydrographic data and chart corrections.</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-globe-americas"></i>
+                    <h3>Global Coverage</h3>
+                    <p>Charts for oceans, seas, and coastal waters worldwide.</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-tablet-alt"></i>
+                    <h3>Multi-Platform</h3>
+                    <p>View on desktop, tablet, and mobile devices, online or offline.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="charts" class="charts-section section-padded bg-light">
+        <div class="container">
+            <h2>Our Chart Collection</h2>
+            <p class="section-description">Explore our comprehensive library of nautical charts by region and type.</p>
+
+            <div class="chart-categories">
+                <button class="btn btn-category active">Electronic Charts (ENC)</button>
+                <button class="btn btn-category">Paper Charts</button>
+                <button class="btn btn-category">Custom Charts</button>
+            </div>
+
+            <div class="chart-grid">
+                <div class="chart-item">
+                    <img src="images/chart-pacific-sample.jpg" alt="Pacific Ocean Chart">
+                    <h3>Pacific Ocean &mdash; North</h3>
+                    <p>Detailed coverage for safe navigation across the vast North Pacific.</p>
+                    <a href="#" class="btn btn-view-chart">View Details <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="chart-item">
+                    <img src="images/chart-atlantic-sample.jpg" alt="Atlantic Ocean Chart">
+                    <h3>Atlantic Ocean &mdash; East Coast</h3>
+                    <p>Comprehensive charts for the busy Atlantic seaboard and key ports.</p>
+                    <a href="#" class="btn btn-view-chart">View Details <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="chart-item">
+                    <img src="images/chart-med-sample.jpg" alt="Mediterranean Sea Chart">
+                    <h3>Mediterranean Sea</h3>
+                    <p>Explore historic and vital waterways with our detailed Med charts.</p>
+                    <a href="#" class="btn btn-view-chart">View Details <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="chart-item">
+                    <img src="images/chart-caribbean-sample.jpg" alt="Caribbean Sea Chart">
+                    <h3>Caribbean Sea</h3>
+                    <p>Navigate the beautiful Caribbean islands with precision and ease.</p>
+                    <a href="#" class="btn btn-view-chart">View Details <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                </div>
+            <div class="text-center mt-50">
+                <a href="#" class="btn btn-primary">Discover All Charts <i class="fas fa-map"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about-section section-padded bg-dark">
+        <div class="container">
+            <h2>About ChartPoint</h2>
+            <div class="about-content">
                 <div class="about-text">
-                    <p>Founded on the principles of innovation and excellence, our team is dedicated to delivering top-tier solutions. We believe in a collaborative approach, working closely with our clients to understand their vision and bring it to life with precision and creativity.</p>
-                    <p>Our passion lies in transforming ideas into impactful realities. With years of experience and a forward-thinking mindset, we consistently push the boundaries of what's possible in the digital realm. Let's build something amazing together.</p>
+                    <p>At **ChartPoint**, our passion for the sea drives everything we do. We are a dedicated team of experienced mariners, hydrographers, and technology innovators committed to enhancing maritime safety and efficiency worldwide.</p>
+                    <p>We understand that accurate navigational data is the cornerstone of every successful voyage. That's why we meticulously compile, verify, and update our charts, adhering to the highest international standards. Our commitment extends beyond just data; we strive to provide intuitive and accessible charting solutions for everyone, from commercial fleets to recreational sailors.</p>
+                    <h3>Our Mission</h3>
+                    <p>To provide the most reliable, comprehensive, and user-friendly nautical charts, empowering safe and informed navigation for all who venture onto the water.</p>
+                    <a href="#" class="btn btn-secondary">Meet Our Team <i class="fas fa-users"></i></a>
                 </div>
                 <div class="about-image">
-                    <img src="https://via.placeholder.com/500x350?text=About+Image" alt="About Our Company">
+                    <img src="images/about-us-team.jpg" alt="ChartPoint Team">
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="services" class="services-section">
-        <div class="container">
-            <h2>Our Services</h2>
-            <div class="services-grid">
-                <div class="service-item">
-                    <i class="fas fa-desktop"></i>
-                    <h3>Web Development</h3>
-                    <p>Building responsive and robust websites tailored to your business needs.</p>
-                </div>
-                <div class="service-item">
-                    <i class="fas fa-mobile-alt"></i>
-                    <h3>Mobile App Development</h3>
-                    <p>Creating intuitive and high-performing mobile applications for all platforms.</p>
-                </div>
-                <div class="service-item">
-                    <i class="fas fa-lightbulb"></i>
-                    <h3>UI/UX Design</h3>
-                    <p>Crafting engaging and user-centric interfaces for seamless experiences.</p>
-                </div>
-                <div class="service-item">
-                    <i class="fas fa-chart-line"></i>
-                    <h3>Digital Marketing</h3>
-                    <p>Strategies to boost your online presence and reach your target audience.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="portfolio" class="portfolio-section">
-        <div class="container">
-            <h2>Our Work</h2>
-            <div class="portfolio-grid">
-                <div class="portfolio-item">
-                    <img src="https://via.placeholder.com/400x300?text=Project+One" alt="Project One">
-                    <div class="portfolio-overlay">
-                        <h4>Creative Branding</h4>
-                        <p>Web Design & Marketing</p>
-                        <a href="#" class="view-project-btn">View Project</a>
-                    </div>
-                </div>
-                <div class="portfolio-item">
-                    <img src="https://via.placeholder.com/400x300?text=Project+Two" alt="Project Two">
-                    <div class="portfolio-overlay">
-                        <h4>Mobile Application</h4>
-                        <p>iOS & Android Dev</p>
-                        <a href="#" class="view-project-btn">View Project</a>
-                    </div>
-                </div>
-                <div class="portfolio-item">
-                    <img src="https://via.placeholder.com/400x300?text=Project+Three" alt="Project Three">
-                    <div class="portfolio-overlay">
-                        <h4>E-commerce Site</h4>
-                        <p>Custom Development</p>
-                        <a href="#" class="view-project-btn">View Project</a>
-                    </div>
-                </div>
-                <div class="portfolio-item">
-                    <img src="https://via.placeholder.com/400x300?text=Project+Four" alt="Project Four">
-                    <div class="portfolio-overlay">
-                        <h4>Responsive Landing Page</h4>
-                        <p>UI/UX Design</p>
-                        <a href="#" class="view-project-btn">View Project</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="contact" class="contact-section">
+    <section id="contact" class="contact-section section-padded bg-light">
         <div class="container">
             <h2>Get In Touch</h2>
-            <p class="section-description">We'd love to hear from you! Fill out the form below or reach out to us directly.</p>
-            <form class="contact-form" action="#" method="POST">
-                <div class="form-group">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name" required>
+            <p class="section-description">Have a question, need support, or interested in custom charting solutions? We're here to help.</p>
+
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Navigational Way, Seaport City, Ocean State 01234</p>
+                    <p><i class="fas fa-phone"></i> +1 (555) 987-6543</p>
+                    <p><i class="fas fa-envelope"></i> info@chartpoint.com</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
                 </div>
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" required>
+                <div class="contact-form-area">
+                    <h3>Send Us a Message</h3>
+                    <form class="contact-form" action="#" method="POST">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="6" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary form-submit-btn">Send Message <i class="fas fa-paper-plane"></i></button>
+                    </form>
                 </div>
-                <div class="form-group">
-                    <label for="subject">Subject</label>
-                    <input type="text" id="subject" name="subject">
-                </div>
-                <div class="form-group">
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" rows="6" required></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary">Send Message</button>
-            </form>
+            </div>
         </div>
     </section>
 
-    <footer>
+    <footer class="site-footer">
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-col">
-                    <h3>About Us</h3>
-                    <p>Dedicated to crafting exceptional digital solutions with passion and expertise.</p>
+            <div class="footer-grid">
+                <div class="footer-col about-col">
+                    <h3>ChartPoint</h3>
+                    <p>Your trusted guide for safe and informed journeys across the world's waters.</p>
                 </div>
-                <div class="footer-col">
-                    <h3>Quick Links</h3>
+                <div class="footer-col links-col">
+                    <h3>Explore</h3>
                     <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#services">Services</a></li>
+                        <li><a href="#charts">Our Charts</a></li>
+                        <li><a href="#about">About Us</a></li>
                         <li><a href="#contact">Contact</a></li>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="terms-of-service.html">Terms of Service</a></li>
                     </ul>
                 </div>
-                <div class="footer-col">
-                    <h3>Connect With Us</h3>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
+                <div class="footer-col contact-info-col">
+                    <h3>Support</h3>
+                    <p><i class="fas fa-phone-alt"></i> +1 (555) 987-6543</p>
+                    <p><i class="fas fa-envelope"></i> support@chartpoint.com</p>
+                    <p><i class="fas fa-headset"></i> Customer Service</p>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 Your Company Name. All rights reserved.</p>
+                <p>&copy; <span id="current-year"></span> ChartPoint. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
     <script>
-        // Simple JavaScript for mobile navigation toggle
-        const burgerMenu = document.getElementById('burger-menu');
-        const navLinks = document.querySelector('.nav-links');
+        document.addEventListener('DOMContentLoaded', function() {
+            const navToggle = document.getElementById('navToggle');
+            const mainNav = document.getElementById('mainNav');
+            const navLinks = document.querySelectorAll('#mainNav .nav-list li a');
 
-        burgerMenu.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
-        });
-
-        // Close nav when a link is clicked (for smooth scrolling)
-        document.querySelectorAll('.nav-links a').forEach(link => {
-            link.addEventListener('click', () => {
-                navLinks.classList.remove('active');
+            // Toggle mobile navigation
+            navToggle.addEventListener('click', function() {
+                mainNav.classList.toggle('active');
             });
+
+            // Close nav when a link is clicked (important for mobile UX)
+            navLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    mainNav.classList.remove('active');
+                });
+            });
+
+            // Set current year in footer
+            document.getElementById('current-year').textContent = new Date().getFullYear();
         });
     </script>
+
 </body>
 </html>
